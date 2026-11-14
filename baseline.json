@@ -3,6 +3,18 @@
     {
       "fingerprint": "aws-access-token:sample/cfg.py:53de5baa315b",
       "reason": "Fake AWS key used only for demo; not a real credential"
+    },
+    {
+      "fingerprint": "private-key:sample/deploy_key.pem:ecae2cf9d830",
+      "reason": "Fake private key used only for demo; not a real credential"
+    },
+    {
+      "fingerprint": "github-pat:sample/github.py:9bbf247affd9",
+      "reason": "Fake GitHub token used only for demo; not a real credential"
+    },
+    {
+      "fingerprint": "slack-webhook-url:sample/notify.js:98dfe0220751",
+      "reason": "Fake Slack webhook used only for demo; not a real credential"
     }
   ]
 }
