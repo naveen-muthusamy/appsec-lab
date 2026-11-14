@@ -1,0 +1,8 @@
+{
+  "entries": [
+    {
+      "fingerprint": "aws-access-token:sample/cfg.py:53de5baa315b",
+      "reason": "Fake AWS key used only for demo; not a real credential"
+    }
+  ]
+}

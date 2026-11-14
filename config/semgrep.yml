@@ -1,0 +1,30 @@
+rules:
+  - id: appsec.python.eval
+    message: Avoid eval(); it can execute attacker-controlled input.
+    languages: [python]
+    severity: ERROR
+    mode: search
+    pattern: eval(...)
+    paths:
+      exclude:
+        - "examples/"
+
+  - id: appsec.python.exec
+    message: Avoid exec(); it can execute dynamically constructed code.
+    languages: [python]
+    severity: WARNING
+    mode: search
+    pattern: exec(...)
+    paths:
+      exclude:
+        - "examples/"
+
+  - id: appsec.python.hardcoded-secret
+    message: Possible hardcoded credential; use a secrets manager or environment variable.
+    languages: [python]
+    severity: ERROR
+    mode: search
+    pattern-regex: (?i)(password|secret|api[_-]?key)\s*=\s*['"][^'"]{8,}['"]
+    paths:
+      exclude:
+        - "examples/"

@@ -1,0 +1,17 @@
+title = "AppSec Take-Home Gitleaks Configuration"
+
+[extend]
+useDefault = true
+
+# Explicit noise reduction: ignore generated/build output and dependency folders.
+[allowlist]
+description = "Exclude generated files, dependencies, and assessment artifacts"
+paths = [
+  "(^|/)\\.git/",
+  "(^|/)node_modules/",
+  "(^|/)vendor/",
+  "(^|/)\\.venv/",
+  "(^|/)venv/",
+  "(^|/)artifacts/",
+  "(^|/)\\.terraform/"
+]
